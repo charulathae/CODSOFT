@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policy Lab | LandGov India</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo">
+        LANDGOV <span>INDIA</span>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="gis.html">GIS Explorer</a></li>
+        <li><a href="policy.html" class="active">Policy Lab</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+
+    <button class="login-btn">Login</button>
+
+</nav>
+
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+
+    <div>
+        <span class="section-tag">POLICY INNOVATION</span>
+
+        <h1>Policy Lab</h1>
+
+        <p>
+            Explore land governance scenarios and understand how different
+            policy priorities may influence land-use outcomes.
+        </p>
+    </div>
+
+</section>
+
+
+<!-- POLICY LAB -->
+<section class="policy-section">
+
+    <div class="policy-layout">
+
+
+        <!-- LEFT CONTROL PANEL -->
+        <div class="policy-controls">
+
+            <h2>Scenario Controls</h2>
+
+            <p class="control-description">
+                Adjust the policy parameters to create a demonstration scenario.
+            </p>
+
+
+            <!-- URBAN GROWTH -->
+            <div class="control-group">
+
+                <div class="control-title">
+                    <label>Urban Growth</label>
+                    <span>60%</span>
+                </div>
+
+                <input type="range" min="0" max="100" value="60">
+
+            </div>
+
+
+            <!-- LAND PROTECTION -->
+            <div class="control-group">
+
+                <div class="control-title">
+                    <label>Land Protection</label>
+                    <span>70%</span>
+                </div>
+
+                <input type="range" min="0" max="100" value="70">
+
+            </div>
+
+
+            <!-- INFRASTRUCTURE -->
+            <div class="control-group">
+
+                <div class="control-title">
+                    <label>Infrastructure Investment</label>
+                    <span>55%</span>
+                </div>
+
+                <input type="range" min="0" max="100" value="55">
+
+            </div>
+
+
+            <!-- CLIMATE -->
+            <div class="control-group">
+
+                <div class="control-title">
+                    <label>Climate Resilience</label>
+                    <span>65%</span>
+                </div>
+
+                <input type="range" min="0" max="100" value="65">
+
+            </div>
+
+
+            <button class="simulation-btn">
+                Run Simulation
+            </button>
+
+        </div>
+
+
+        <!-- RIGHT RESULT PANEL -->
+        <div class="policy-results">
+
+            <div class="simulation-header">
+
+                <div>
+                    <span class="section-tag">DEMO SCENARIO</span>
+
+                    <h2>Policy Simulation Output</h2>
+
+                    <p>
+                        Prototype results for demonstration purposes.
+                    </p>
+                </div>
+
+                <span class="status-badge">
+                    Ready
+                </span>
+
+            </div>
+
+
+            <!-- RESULT CARDS -->
+            <div class="result-grid">
+
+                <div class="result-card">
+
+                    <span class="result-label">
+                        Land Use Pressure
+                    </span>
+
+                    <strong>Moderate</strong>
+
+                    <p>
+                        Urban expansion may increase pressure on available land.
+                    </p>
+
+                </div>
+
+
+                <div class="result-card">
+
+                    <span class="result-label">
+                        Development Potential
+                    </span>
+
+                    <strong>High</strong>
+
+                    <p>
+                        Infrastructure investment can support planned development.
+                    </p>
+
+                </div>
+
+
+                <div class="result-card">
+
+                    <span class="result-label">
+                        Climate Resilience
+                    </span>
+
+                    <strong>Good</strong>
+
+                    <p>
+                        Stronger resilience measures can reduce climate-related
+                        land-use risks.
+                    </p>
+
+                </div>
+
+
+                <div class="result-card">
+
+                    <span class="result-label">
+                        Infrastructure Readiness
+                    </span>
+
+                    <strong>Moderate</strong>
+
+                    <p>
+                        Infrastructure planning should consider future land demand.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- INSIGHT BOX -->
+            <div class="policy-insight">
+
+                <div class="insight-icon">
+                    💡
+                </div>
+
+                <div>
+
+                    <h3>Policy Insight</h3>
+
+                    <p>
+                        A balanced approach combining land protection,
+                        planned urban growth, infrastructure investment,
+                        and climate resilience can be explored through
+                        different policy scenarios.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- SCENARIO TYPES -->
+    <div class="scenario-section">
+
+        <div class="section-heading">
+
+            <span class="section-tag">
+                EXPERIMENT
+            </span>
+
+            <h2>Explore Policy Scenarios</h2>
+
+        </div>
+
+
+        <div class="scenario-grid">
+
+            <div class="scenario-card">
+
+                <div class="scenario-number">
+                    01
+                </div>
+
+                <h3>Balanced Development</h3>
+
+                <p>
+                    Combine urban development, land protection,
+                    infrastructure and climate resilience.
+                </p>
+
+                <button>
+                    Explore Scenario →
+                </button>
+
+            </div>
+
+
+            <div class="scenario-card">
+
+                <div class="scenario-number">
+                    02
+                </div>
+
+                <h3>Urban Expansion</h3>
+
+                <p>
+                    Examine the possible effects of increasing
+                    development pressure around growing regions.
+                </p>
+
+                <button>
+                    Explore Scenario →
+                </button>
+
+            </div>
+
+
+            <div class="scenario-card">
+
+                <div class="scenario-number">
+                    03
+                </div>
+
+                <h3>Conservation Focus</h3>
+
+                <p>
+                    Explore scenarios that give greater priority
+                    to land protection and environmental resilience.
+                </p>
+
+                <button>
+                    Explore Scenario →
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="logo">
+        LANDGOV <span>INDIA</span>
+    </div>
+
+    <p>
+        National Digital Platform for Research & Policy Innovation
+    </p>
+
+    <p>
+        © 2026 LandGov India — SIH Prototype
+    </p>
+
+</footer>
+
+
+</body>
+</html>

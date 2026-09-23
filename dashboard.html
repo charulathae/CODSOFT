@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Decision Dashboard | LandGov India</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        LANDGOV <span>INDIA</span>
+    </div>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="research.html">Research</a>
+        </li>
+
+        <li>
+            <a href="gis.html">GIS Explorer</a>
+        </li>
+
+        <li>
+            <a href="policy.html">Policy Lab</a>
+        </li>
+
+        <li>
+            <a href="dashboard.html" class="active">
+                Dashboard
+            </a>
+        </li>
+
+    </ul>
+
+    <button class="login-btn">
+        Login
+    </button>
+
+</nav>
+
+
+<!-- PAGE HEADER -->
+
+<section class="page-header">
+
+    <div>
+
+        <span class="section-tag">
+            DECISION SUPPORT
+        </span>
+
+        <h1>
+            Decision Dashboard
+        </h1>
+
+        <p>
+            Monitor research outputs, land-use trends, climate
+            vulnerability, policy performance and geospatial insights.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- DASHBOARD -->
+
+<section class="dashboard-section">
+
+
+    <!-- TOP FILTER -->
+
+    <div class="dashboard-toolbar">
+
+        <div>
+
+            <h2>
+                National Land Governance Overview
+            </h2>
+
+            <p>
+                Demonstration dashboard for the SIH prototype
+            </p>
+
+        </div>
+
+
+        <select>
+
+            <option>
+                All India
+            </option>
+
+            <option>
+                Tamil Nadu
+            </option>
+
+            <option>
+                Karnataka
+            </option>
+
+            <option>
+                Maharashtra
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- KPI CARDS -->
+
+    <div class="kpi-grid">
+
+        <div class="kpi-card">
+
+            <span class="kpi-icon">
+                📚
+            </span>
+
+            <p>
+                Research Outputs
+            </p>
+
+            <h3>
+                128+
+            </h3>
+
+            <span class="kpi-status">
+                Available
+            </span>
+
+        </div>
+
+
+        <div class="kpi-card">
+
+            <span class="kpi-icon">
+                🗺️
+            </span>
+
+            <p>
+                GIS Datasets
+            </p>
+
+            <h3>
+                64+
+            </h3>
+
+            <span class="kpi-status">
+                Integrated
+            </span>
+
+        </div>
+
+
+        <div class="kpi-card">
+
+            <span class="kpi-icon">
+                📊
+            </span>
+
+            <p>
+                Policy Studies
+            </p>
+
+            <h3>
+                18+
+            </h3>
+
+            <span class="kpi-status">
+                Analysed
+            </span>
+
+        </div>
+
+
+        <div class="kpi-card">
+
+            <span class="kpi-icon">
+                💡
+            </span>
+
+            <p>
+                Innovation Projects
+            </p>
+
+            <h3>
+                27+
+            </h3>
+
+            <span class="kpi-status">
+                Active
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN DASHBOARD GRID -->
+
+    <div class="dashboard-grid">
+
+
+        <!-- LAND USE CHART -->
+
+        <div class="dashboard-card large-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="section-tag">
+                        TREND
+                    </span>
+
+                    <h3>
+                        Land-Use Change
+                    </h3>
+
+                </div>
+
+                <span class="card-period">
+                    2020–2026
+                </span>
+
+            </div>
+
+
+            <div class="chart">
+
+                <div class="bar">
+
+                    <span>
+                        Agriculture
+                    </span>
+
+                    <div class="bar-track">
+                        <div
+                            class="bar-fill agriculture"
+                            style="width: 78%;">
+                        </div>
+                    </div>
+
+                    <strong>
+                        78%
+                    </strong>
+
+                </div>
+
+
+                <div class="bar">
+
+                    <span>
+                        Urban
+                    </span>
+
+                    <div class="bar-track">
+                        <div
+                            class="bar-fill urban"
+                            style="width: 58%;">
+                        </div>
+                    </div>
+
+                    <strong>
+                        58%
+                    </strong>
+
+                </div>
+
+
+                <div class="bar">
+
+                    <span>
+                        Forest
+                    </span>
+
+                    <div class="bar-track">
+                        <div
+                            class="bar-fill forest"
+                            style="width: 66%;">
+                        </div>
+                    </div>
+
+                    <strong>
+                        66%
+                    </strong>
+
+                </div>
+
+
+                <div class="bar">
+
+                    <span>
+                        Infrastructure
+                    </span>
+
+                    <div class="bar-track">
+                        <div
+                            class="bar-fill infrastructure"
+                            style="width: 45%;">
+                        </div>
+                    </div>
+
+                    <strong>
+                        45%
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CLIMATE RISK -->
+
+        <div class="dashboard-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="section-tag">
+                        RISK
+                    </span>
+
+                    <h3>
+                        Climate Vulnerability
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="risk-meter">
+
+                <div class="risk-circle">
+
+                    <strong>
+                        62
+                    </strong>
+
+                    <span>
+                        /100
+                    </span>
+
+                </div>
+
+                <p>
+                    Moderate vulnerability
+                </p>
+
+            </div>
+
+
+            <div class="risk-list">
+
+                <div>
+                    <span>
+                        Flood Risk
+                    </span>
+
+                    <strong>
+                        Medium
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Drought Risk
+                    </span>
+
+                    <strong>
+                        High
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Heat Stress
+                    </span>
+
+                    <strong>
+                        Medium
+                    </strong>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- POLICY PERFORMANCE -->
+
+        <div class="dashboard-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="section-tag">
+                        POLICY
+                    </span>
+
+                    <h3>
+                        Policy Performance
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="performance-item">
+
+                <div class="performance-title">
+
+                    <span>
+                        Land Protection
+                    </span>
+
+                    <strong>
+                        72%
+                    </strong>
+
+                </div>
+
+                <div class="progress">
+                    <div
+                        style="width:72%;">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="performance-item">
+
+                <div class="performance-title">
+
+                    <span>
+                        Urban Planning
+                    </span>
+
+                    <strong>
+                        64%
+                    </strong>
+
+                </div>
+
+                <div class="progress">
+                    <div
+                        style="width:64%;">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="performance-item">
+
+                <div class="performance-title">
+
+                    <span>
+                        Climate Resilience
+                    </span>
+
+                    <strong>
+                        81%
+                    </strong>
+
+                </div>
+
+                <div class="progress">
+                    <div
+                        style="width:81%;">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- GIS INSIGHTS -->
+
+        <div class="dashboard-card large-card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <span class="section-tag">
+                        GEOSPATIAL
+                    </span>
+
+                    <h3>
+                        Key GIS Insights
+                    </h3>
+
+                </div>
+
+                <a href="gis.html" class="view-link">
+                    Open GIS →
+                </a>
+
+            </div>
+
+
+            <div class="insight-grid">
+
+                <div class="dashboard-insight">
+
+                    <span>
+                        🏙️
+                    </span>
+
+                    <div>
+
+                        <h4>
+                            Urban Expansion
+                        </h4>
+
+                        <p>
+                            Increasing development pressure
+                            around major growth regions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-insight">
+
+                    <span>
+                        🌾
+                    </span>
+
+                    <div>
+
+                        <h4>
+                            Agricultural Land
+                        </h4>
+
+                        <p>
+                            Monitoring land-use transitions
+                            affecting productive areas.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-insight">
+
+                    <span>
+                        🌧️
+                    </span>
+
+                    <div>
+
+                        <h4>
+                            Climate Risk
+                        </h4>
+
+                        <p>
+                            Identifying regions requiring
+                            resilience planning.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-insight">
+
+                    <span>
+                        🛣️
+                    </span>
+
+                    <div>
+
+                        <h4>
+                            Infrastructure
+                        </h4>
+
+                        <p>
+                            Supporting infrastructure planning
+                            using spatial information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- DASHBOARD NOTICE -->
+
+    <div class="dashboard-notice">
+
+        <strong>
+            Prototype Notice
+        </strong>
+
+        <p>
+            The values shown on this dashboard are demonstration
+            values for the SIH prototype. In the full platform,
+            they will be generated from integrated government,
+            geospatial, research and socio-economic datasets.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="logo">
+        LANDGOV <span>INDIA</span>
+    </div>
+
+    <p>
+        National Digital Platform for Research & Policy Innovation
+    </p>
+
+    <p>
+        © 2026 LandGov India — SIH Prototype
+    </p>
+
+</footer>
+
+
+</body>
+</html>

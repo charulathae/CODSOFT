@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GIS Explorer | LandGov India</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>LAND</span>GOV INDIA
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="gis.html" class="active">GIS Explorer</a>
+            <a href="policy.html">Policy Lab</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+
+        <button class="login-btn">
+            Login
+        </button>
+
+    </header>
+
+
+    <!-- PAGE HEADER -->
+
+    <section class="page-header">
+
+        <div>
+
+            <span class="hero-tag">
+                GEOSPATIAL INTELLIGENCE
+            </span>
+
+            <h1>
+                GIS Explorer
+            </h1>
+
+            <p>
+                Explore land-use patterns, climate vulnerability,
+                infrastructure development and other spatial insights.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- GIS WORKSPACE -->
+
+    <main class="gis-section">
+
+        <div class="gis-layout">
+
+
+            <!-- SIDEBAR -->
+
+            <aside class="gis-sidebar">
+
+                <div class="sidebar-title">
+
+                    <span>MAP LAYERS</span>
+
+                    <h2>
+                        Explore Data
+                    </h2>
+
+                </div>
+
+
+                <div class="layer-group">
+
+                    <label class="layer-option">
+
+                        <input type="checkbox" checked>
+
+                        <span class="layer-color land"></span>
+
+                        <span>
+                            Land Use
+                        </span>
+
+                    </label>
+
+
+                    <label class="layer-option">
+
+                        <input type="checkbox">
+
+                        <span class="layer-color climate"></span>
+
+                        <span>
+                            Climate Vulnerability
+                        </span>
+
+                    </label>
+
+
+                    <label class="layer-option">
+
+                        <input type="checkbox">
+
+                        <span class="layer-color urban"></span>
+
+                        <span>
+                            Urban Expansion
+                        </span>
+
+                    </label>
+
+
+                    <label class="layer-option">
+
+                        <input type="checkbox">
+
+                        <span class="layer-color infrastructure"></span>
+
+                        <span>
+                            Infrastructure
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="sidebar-divider"></div>
+
+
+                <div class="location-filter">
+
+                    <label>
+                        State / Region
+                    </label>
+
+                    <select>
+                        <option>All India</option>
+                        <option>Tamil Nadu</option>
+                        <option>Karnataka</option>
+                        <option>Kerala</option>
+                        <option>Maharashtra</option>
+                    </select>
+
+
+                    <label>
+                        District
+                    </label>
+
+                    <select>
+                        <option>All Districts</option>
+                        <option>Dindigul</option>
+                        <option>Coimbatore</option>
+                        <option>Madurai</option>
+                        <option>Chennai</option>
+                    </select>
+
+                </div>
+
+
+                <button class="apply-map-btn">
+                    Apply Filters
+                </button>
+
+
+                <div class="data-source">
+
+                    <span>
+                        DATA SOURCE
+                    </span>
+
+                    <p>
+                        Prototype geospatial dataset
+                    </p>
+
+                    <small>
+                        Sample data for demonstration
+                    </small>
+
+                </div>
+
+            </aside>
+
+
+            <!-- MAP AREA -->
+
+            <section class="map-workspace">
+
+                <div class="map-toolbar">
+
+                    <div>
+                        <strong>
+                            Land Governance Map
+                        </strong>
+
+                        <span>
+                            India • Prototype View
+                        </span>
+                    </div>
+
+                    <div class="map-actions">
+
+                        <button>
+                            + Zoom
+                        </button>
+
+                        <button>
+                            ⛶ Fullscreen
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DEMO MAP -->
+
+                <div class="gis-map">
+
+                    <div class="india-outline">
+
+                        <!-- Decorative India-like shape -->
+
+                        <div class="state state-1"></div>
+                        <div class="state state-2"></div>
+                        <div class="state state-3"></div>
+                        <div class="state state-4"></div>
+                        <div class="state state-5"></div>
+                        <div class="state state-6"></div>
+
+                    </div>
+
+
+                    <!-- MAP MARKERS -->
+
+                    <div class="gis-marker marker-1">
+                        <span></span>
+
+                        <div class="marker-tooltip">
+                            <strong>Dindigul</strong>
+                            <small>Land Use Analysis</small>
+                        </div>
+                    </div>
+
+
+                    <div class="gis-marker marker-2">
+                        <span></span>
+
+                        <div class="marker-tooltip">
+                            <strong>Chennai</strong>
+                            <small>Urban Expansion</small>
+                        </div>
+                    </div>
+
+
+                    <div class="gis-marker marker-3">
+                        <span></span>
+
+                        <div class="marker-tooltip">
+                            <strong>Coimbatore</strong>
+                            <small>Infrastructure Growth</small>
+                        </div>
+                    </div>
+
+
+                    <div class="map-compass">
+                        N
+                    </div>
+
+
+                    <div class="map-scale">
+                        0 ───── 50 ───── 100 km
+                    </div>
+
+
+                    <div class="map-notice">
+                        DEMO GIS VIEW
+                    </div>
+
+                </div>
+
+
+                <!-- MAP INFORMATION -->
+
+                <div class="map-information">
+
+                    <div class="info-card">
+
+                        <span class="info-icon">
+                            🌱
+                        </span>
+
+                        <div>
+                            <small>
+                                LAND USE
+                            </small>
+
+                            <strong>
+                                Agricultural
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <span class="info-icon">
+                            🌡️
+                        </span>
+
+                        <div>
+                            <small>
+                                CLIMATE RISK
+                            </small>
+
+                            <strong>
+                                Moderate
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <span class="info-icon">
+                            🏙️
+                        </span>
+
+                        <div>
+                            <small>
+                                URBAN GROWTH
+                            </small>
+
+                            <strong>
+                                Increasing
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="info-card">
+
+                        <span class="info-icon">
+                            🛣️
+                        </span>
+
+                        <div>
+                            <small>
+                                INFRASTRUCTURE
+                            </small>
+
+                            <strong>
+                                Developing
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <!-- GIS INSIGHTS -->
+
+        <section class="gis-insights">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span>
+                        SPATIAL INSIGHTS
+                    </span>
+
+                    <h2>
+                        What the GIS Layer Can Reveal
+                    </h2>
+
+                </div>
+
+                <p>
+                    Prototype examples showing how spatial
+                    information can support land governance research.
+                </p>
+
+            </div>
+
+
+            <div class="insight-grid">
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Land-Use Change
+                    </h3>
+
+                    <p>
+                        Compare agricultural, residential,
+                        industrial and other land-use patterns.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Climate Vulnerability
+                    </h3>
+
+                    <p>
+                        Identify areas that may require
+                        climate-resilient land-use planning.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Urban Expansion
+                    </h3>
+
+                    <p>
+                        Study patterns of urban growth and
+                        transitions between rural and urban land.
+                    </p>
+
+                </div>
+
+
+                <div class="insight-card">
+
+                    <div class="insight-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Infrastructure
+                    </h3>
+
+                    <p>
+                        Examine relationships between
+                        infrastructure development and land use.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            LANDGOV INDIA
+        </div>
+
+        <p>
+            National Digital Platform for Research &
+            Policy Innovation in Land Governance
+        </p>
+
+        <p class="copyright">
+            SIH 2026 Prototype
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
